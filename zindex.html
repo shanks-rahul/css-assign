@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            max-height: 200px;
+            overflow-y: auto;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 200px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-button {
+            background-color: #f35d0d;
+            color: rgb(14, 13, 13);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropdown-button:hover {
+            background-color: #45a049;
+        }
+        
+        .dropdown-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropdown-button">Hover to view dropdown</button>
+        <div class="dropdown-content">
+            <div class="dropdown-item">Option 1</div>
+            <div class="dropdown-item">Option 2</div>
+            <div class="dropdown-item">Option 3</div>
+            <div class="dropdown-item">Option 4</div>
+            <div class="dropdown-item">Option 5</div>
+            <div class="dropdown-item">Option 6</div>
+            <div class="dropdown-item">Option 7</div>
+            <div class="dropdown-item">Option 8</div>
+            <div class="dropdown-item">Option 9</div>
+            <div class="dropdown-item">Option 10</div>
+        </div>
+    </div>
+</body>
+</html>
